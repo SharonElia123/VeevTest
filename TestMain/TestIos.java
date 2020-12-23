@@ -6,7 +6,7 @@ import org.testng.annotations.*;
 import Log.Log;
 import Utility.StartApplication;
 import static org.junit.Assert.*;
-class TestNg {
+class TestIos {
     @Parameters("applicationName")
     @BeforeTest
     public void beforeMethod(String applicationName) throws Exception {
