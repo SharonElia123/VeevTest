@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="VeevTest" >
+    <test name = "Veev test" parallel = "methods">
+        <parameter name = "browserName" value="Chrome"/>
+        <parameter name = "nameSearch" value="חיפוש תמונות"/>
+        <parameter name = "listNumber444444" value="13"/>
+        <classes>
+            <class name = "TestMain.TestNg" />
+        </classes>
+    </test>
+
+</suite>
