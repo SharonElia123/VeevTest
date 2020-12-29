@@ -53,6 +53,21 @@ public class JenkinsPage extends BaseClass {
         return element;
 
     }
+    public static WebElement NameAfterFix(int row, int column) throws Exception {
+        try {
+            WebElement cellIneed = driver.findElement(By.xpath("//*[@id=\"table\"]/table/tbody/tr["+row+"]/td["+column+"]"));
+            
+            Log.info("status");
+
+        } catch (Exception e) {
+            Log.error("status not found on the Home Page");
+            throw (e);
+        }
+
+        return element;
+
+    }
+
 
 
 
