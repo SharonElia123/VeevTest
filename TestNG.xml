@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version = "1.0" encoding = "UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
@@ -21,4 +22,29 @@
         </classes>
     </test>
 
+=======
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="VeevTest" >
+    <test name = "CoonectToTheIosServer" parallel = "methods">
+        <parameter name = "applicationName" value="Ios"/>
+        <parameter name = "userName" value="Sharon"/>
+        <parameter name = "passWord" value="123"/>
+        <parameter name = "veedPageName" value="veed"/>
+
+        <classes>
+            <class name = "TestMain.TestIos" />
+        </classes>
+    </test>
+    <test name = "JenkinsTest" parallel = "methods">
+        <parameter name = "browserName" value="Chrome"/>
+        <parameter name = "jobName" value="Sharon"/>
+        <parameter name = "lastRun" value="123"/>
+         <classes>
+            <class name = "TestMain.TestJenkins" />
+        </classes>
+    </test>
+
+>>>>>>> cc916ee4f84172344937fb6ce876cd10a80661b4
 </suite>
